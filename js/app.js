@@ -2,14 +2,17 @@
 ================================================== */
 const videoSection1 = document.querySelector('.video-section-1');
 const btnRight = document.querySelector('.video-section-1 .btn-right');
+const header = document.querySelector('.header');
 
 if (window.innerWidth > 1024) {
   btnRight.addEventListener('mouseenter', (e) => {
     videoSection1.classList.add('inverted');
+    header.classList.add('inverted');
   });
   
   btnRight.addEventListener('mouseleave', (e) => {
     videoSection1.classList.remove('inverted');
+    header.classList.remove('inverted');
   });
 }
 
