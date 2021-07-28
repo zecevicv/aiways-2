@@ -205,3 +205,47 @@ if (document.querySelector('.configurator-interior .swiper-container')) {
     },
   });
 }
+
+/* #Popup
+================================================== */
+const popupTogglers = document.querySelectorAll('.popup-toggler');
+const popups = document.querySelectorAll('.popup');
+const body = document.querySelector('body');
+
+// Popup Handler
+const popupHandler = (popup) => {
+  body.classList.add('no-scroll');
+  popup.classList.add('show');
+};
+
+// Popup Toggler
+popupTogglers.forEach((toggler) => {
+  toggler.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    const popup = document.querySelector(toggler.dataset.toggle);
+
+    popupHandler(popup);
+  });
+});
+
+// Close Btn
+popups.forEach((popup) => {
+  popup.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    // Close Btn
+    if (e.target.closest('.popup-close')) {
+      body.classList.remove('no-scroll');
+      popup.classList.remove('show');
+    }
+  })
+});
+
+// Close on outside click
+document.addEventListener('click', (e) => {
+  if (document.querySelector('.popup.show') && e.target.closest('.popup-backdrop')) {
+    document.querySelector('.popup.show').classList.remove('show');
+    body.classList.remove('no-scroll');
+  }
+});
