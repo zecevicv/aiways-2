@@ -444,13 +444,18 @@ h6 {
 /* #Header
 ================================================== */
 .header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   padding: 1.3vw 0;
   color: black;
   z-index: 1000;
+  transition: background-color .3s ease;
+}
+
+.header.header-white {
+  background-color: white;
 }
 
 .header .container {

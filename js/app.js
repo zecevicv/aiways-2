@@ -1,8 +1,25 @@
+/* #Header
+    ======================================================= */
+const header = document.querySelector('.header');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 50 && !header.classList.contains('inverted')) {
+    header.classList.add('header-white');
+  } else {
+    header.classList.remove('header-white');
+  }
+});
+
+if (window.scrollY > 50) {
+  header.classList.add('header-white');
+} else {
+  header.classList.remove('header-white');
+}
+
 /* #Video Section 1
 ================================================== */
 const videoSection1 = document.querySelector('.video-section-1');
 const btnRight = document.querySelector('.video-section-1 .btn-right');
-const header = document.querySelector('.header');
 
 if (videoSection1 && window.innerWidth > 1024) {
   btnRight.addEventListener('mouseenter', (e) => {
