@@ -1033,6 +1033,10 @@ h6 {
   bottom: -5vw;
 }
 
+.video-section-2 .car img {
+  width: 65.4vw;
+}
+
 .video-section-2 .scroll {
   position: absolute;
   top: 49.5vw;
@@ -1142,6 +1146,10 @@ h6 {
     transform: translateX(-50%);
     bottom: -27vw;
     width: 93%;
+  }
+
+  .video-section-2 .car img {
+    width: 100%;
   }
 }
 
