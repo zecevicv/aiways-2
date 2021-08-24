@@ -924,7 +924,7 @@ h6 {
 .video-section-2 .heading {
   color: white;
   width: 54.1vw;
-  margin-bottom: 7.25vw;
+  margin-bottom: 5.25vw;
 }
 
 .video-section-2 .heading h2 {
@@ -933,6 +933,14 @@ h6 {
 
 .video-section-2 .heading p {
   margin-bottom: .5vw;
+}
+
+.video-section-2 .heading a {
+  border: 1px solid white;
+  padding: .75vw 3vw;
+  margin-top: 1vw;
+  display: inline-flex;
+  border-radius: .75vw;
 }
 
 .video-section-2 .cards {
@@ -992,6 +1000,14 @@ h6 {
 
 .video-section-2 .text p {
   margin-bottom: .5vw;
+}
+
+.video-section-2 .text a {
+  border: 1px solid black;
+  padding: .75vw 3vw;
+  margin-top: 1vw;
+  display: inline-flex;
+  border-radius: .75vw;
 }
 
 .video-section-2 .bg {
@@ -1087,6 +1103,12 @@ h6 {
     margin-bottom: 3vw;
   }
 
+  .video-section-2 .heading a {
+    padding: 1.5vw 6vw;
+    margin-top: 2vw;
+    border-radius: 2vw;
+  }
+
   .video-section-2 .cards {
     margin-bottom: 23.3vw;
   }
@@ -1144,12 +1166,18 @@ h6 {
     margin-bottom: 2.5vw;
   }
 
+  .video-section-2 .text a {
+    padding: 1.5vw 6vw;
+    margin-top: 2vw;
+    border-radius: 2vw;
+  }
+
   .video-section-2 .car {
     position: absolute;
     right: auto;
     left: 47%;
     transform: translateX(-50%);
-    bottom: -27vw;
+    bottom: -35vw;
     width: 93%;
   }
 
@@ -1200,7 +1228,7 @@ h6 {
   align-items: center;
   justify-content: center;
   text-align: center;
-  border-radius: 500px;
+  border-radius: 1vw;
   border: 2px solid white;
   padding: 0 1.3vw;
   width: 26.8vw;
@@ -1231,6 +1259,7 @@ h6 {
 
 .video-section-3 .container .btn {
   margin: 3vw auto 0 auto;
+  border-radius: .75vw;
 }
 
 .video-section-3 .thumbs-slider {
@@ -1334,6 +1363,7 @@ h6 {
   .video-section-3 .gallery-form form {
     padding: 0 4vw;
     width: 100%;
+    border-radius: 2.66vw;
   }
   
   .video-section-3 .gallery-form input {
@@ -1346,6 +1376,7 @@ h6 {
 
   .video-section-3 .container .btn {
     margin: 13.3vw auto 0 auto;
+    border-radius: 2.66vw;
   }
 
   .video-section-3 .thumbs-slider {
