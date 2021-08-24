@@ -1205,6 +1205,11 @@ h6 {
   position: relative;
 }
 
+.video-section-3 .gallery-slider img,
+.video-section-3 .gallery-slider video {
+  width: 100%;
+}
+
 .video-section-3 .gallery-form {
   position: absolute;
   top: 50%;
