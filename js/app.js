@@ -292,7 +292,7 @@ if (document.querySelector('.u5-page')) {
     });
     
     window.onscroll = function() {
-      let scrollPosition = (document.documentElement.scrollTop || document.body.scrollTop);
+      let scrollPosition = ((document.documentElement.scrollTop + 350) || document.body.scrollTop);
     
       for (i in sections) {
         if (sections[i] <= scrollPosition) {
