@@ -333,3 +333,27 @@ if (document.querySelector('.u5-sticky .swiper-container')) {
     },
   });
 }
+
+/* #U5 Videos
+================================================== */
+if (window.innerWidth > 1023) {
+  const u5Videos = document.querySelectorAll('.u5-videos .video');
+
+  u5Videos.forEach((video) => {
+    const videoLink = video.querySelector('a');
+    const videoEl = video.querySelector('video');
+    
+    videoLink.addEventListener('mouseenter', (e) => {
+      video.classList.add('show');
+      videoEl.play();
+    });
+    
+    videoLink.addEventListener('mouseleave', (e) => {
+      video.classList.remove('show');
+      videoEl.pause();
+      setTimeout(function(){ 
+        videoEl.currentTime = 0;
+       }, 300);
+    });
+  });
+}
