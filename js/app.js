@@ -3,14 +3,14 @@
 const header = document.querySelector('.header');
 
 window.addEventListener('scroll', () => {
-  if (window.scrollY > 50 && !header.classList.contains('inverted')) {
+  if (window.scrollY > 0 && !header.classList.contains('inverted')) {
     header.classList.add('header-white');
   } else {
     header.classList.remove('header-white');
   }
 });
 
-if (window.scrollY > 50) {
+if (window.scrollY > 0) {
   header.classList.add('header-white');
 } else {
   header.classList.remove('header-white');
@@ -382,5 +382,27 @@ if (document.querySelector('.u5-design .swiper-container')) {
         centeredSlides: false
       }
     }
+  });
+}
+
+/* #U5 Design Videos Slider
+================================================== */
+if (document.querySelector('.popup-design-videos .swiper-container')) {
+  const designVideoPopupTogglers = document.querySelectorAll('.u5-design .img .popup-toggler');
+
+  const designVideoSlider = new Swiper(".popup-design-videos .swiper-container", {
+    slidesPerView: 1,
+    navigation: {
+      nextEl: ".popup-design-videos .swiper-button-next",
+      prevEl: ".popup-design-videos .swiper-button-prev",
+    },
+  });
+
+  designVideoPopupTogglers.forEach((toggler) => {
+    const slideTo = toggler.dataset.slideTo - 1;
+
+    toggler.addEventListener('click', (e) => {
+      designVideoSlider.slideTo(slideTo, 0);
+    });
   });
 }
