@@ -2342,6 +2342,7 @@ h6 {
   backface-visibility: hidden;
   overflow-y: scroll;
   z-index: 1000;
+  display: none;
 }
 
 .popup-premium.show {
@@ -3565,6 +3566,7 @@ h6 {
   backface-visibility: hidden;
   overflow-y: scroll;
   z-index: 1000;
+  display: none;
 }
 
 .popup-design-videos.show {
@@ -3681,6 +3683,7 @@ h6 {
   backface-visibility: hidden;
   overflow-y: scroll;
   z-index: 1000;
+  display: none;
 }
 
 .u5-popup.show {

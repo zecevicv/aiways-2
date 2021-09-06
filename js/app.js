@@ -246,6 +246,13 @@ const popupHandler = (popup) => {
   popup.classList.add('show');
 };
 
+// Disable Animation Lag at page load
+popups.forEach((popup) => {
+  gsap.set(popup, {
+    display: 'block'
+  });
+});
+
 // Popup Toggler
 popupTogglers.forEach((toggler) => {
   toggler.addEventListener('click', (e) => {
