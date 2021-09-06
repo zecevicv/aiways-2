@@ -3772,6 +3772,48 @@ h6 {
   margin-bottom: 1vw;
 }
 
+.u5-popup .tabs {
+  min-width: 0;
+  max-width: 100%;
+  min-height: 0;
+  max-height: 100%;
+  width: 100%;
+}
+
+.u5-popup .configurator-color {
+  min-width: 0;
+  max-width: 100%;
+  min-height: 0;
+  max-height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 0;
+  margin: 1.56vw 0 6.77vw 0;
+}
+
+.u5-popup .configurator-color::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 7.5vw;
+  top: 0;
+  left: 0;
+  background-image: url('../img/u5/aiways-bg-letters.svg');
+  background-size: contain;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.u5-popup .configurator-color .container > .text {
+  justify-content: center;
+  align-items: center;
+}
+
+.configurator-color .container > .img {
+  margin-bottom: 2.6vw;
+}
+
 @media (max-width: 1023.98px) {
   .u5-popup .popup-content {
     padding: 5.73vw 3.73vw 12.93vw 3.73vw;
@@ -3830,5 +3872,25 @@ h6 {
   .u5-popup .media-box .img picture,
   .u5-popup .media-box .img video {
     border-radius: 5.33vw;
+  }
+
+  .u5-popup .configurator-color {
+    margin: 12vw 0 16vw 0;
+  }
+  
+  .u5-popup .configurator-color::after {
+    height: 8.4vw;
+  }
+
+  .configurator-color .container {
+    width: 100%;
+  }
+
+  .configurator-color .swiper-slide {
+    padding: 2vw 0 6vw 0;
+  }
+  
+  .configurator-color .container > .img {
+    margin-bottom: 4vw;
   }
 }
