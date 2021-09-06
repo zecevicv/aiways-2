@@ -2924,12 +2924,24 @@ h6 {
   margin-right: -16.5vw;
 }
 
+.u5-design .swiper-slide a {
+  display: block;
+  overflow: hidden;
+  border-radius: 4vw;
+}
+
 .u5-design .swiper-slide img {
   width: 100%;
   height: 11.45vw;
   object-fit: cover;
   object-position: center;
-  border-radius: 4vw;
+  transition: transform .3s ease;
+  backface-visibility: hidden;
+  transform: scale(1);
+}
+
+.u5-design .swiper-slide img:hover {
+  transform: scale(1.05);
 }
 
 @media (min-width: 1024px) {
@@ -2974,10 +2986,13 @@ h6 {
   .u5-design .swiper-slide:nth-child(3) {
     margin-right: -41vw;
   }
+
+  .u5-design .swiper-slide a {
+    border-radius: 10vw;
+  }
   
   .u5-design .swiper-slide img {
     height: 29.33vw;
-    border-radius: 10vw;
   }
 
   .u5-design .swiper-pagination {
