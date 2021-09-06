@@ -357,3 +357,30 @@ if (window.innerWidth > 1023) {
     });
   });
 }
+
+/* #U5 Design Slider
+================================================== */
+if (document.querySelector('.u5-design .swiper-container')) {
+  new Swiper(".u5-design .swiper-container", {
+    
+    pagination: {
+      el: ".u5-design .swiper-container .swiper-pagination",
+    },
+    breakpoints: {
+      0: {
+        slidesPerView: 1.25,
+        slidesPerColumn: 3,
+        slidesPerGroup: 2.5,
+        slidesPerColumnFill: 'row',
+        centeredSlides: true
+      },
+      1024: {
+        slidesPerView: 3,
+        slidesPerColumn: 3,
+        slidesPerGroup: 3,
+        slidesPerColumnFill: 'row',
+        centeredSlides: false
+      }
+    }
+  });
+}
