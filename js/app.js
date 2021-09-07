@@ -288,6 +288,8 @@ document.addEventListener('click', (e) => {
 /* #ScrollSpy
 ================================================== */
 if (document.querySelector('.u5-page')) {
+
+  // Handling link marking
   let section = document.querySelectorAll(".u5-page .section");
   
   if (section) {
@@ -299,16 +301,34 @@ if (document.querySelector('.u5-page')) {
     });
     
     window.onscroll = function() {
-      let scrollPosition = ((document.documentElement.scrollTop + 350) || document.body.scrollTop);
+      let scrollPosition = ((document.documentElement.scrollTop + 350) || (document.body.scrollTop + 350));
     
       for (i in sections) {
         if (sections[i] <= scrollPosition) {
-          document.querySelector('.scroll-spy .active').setAttribute('class', ' ');
+          if (document.querySelector('.scroll-spy .active')) {
+            document.querySelector('.scroll-spy .active').setAttribute('class', ' ');
+          }
           document.querySelector('.scroll-spy a[href*=' + i + ']').setAttribute('class', 'active');
         }
       }
     };
   }
+
+  // Handling link clicks
+  const scrollSpyLinks = document.querySelectorAll('.scroll-spy a');
+
+  scrollSpyLinks.forEach((link) => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+
+      const id = link.hash;
+      const yOffset = -95; 
+      const element = document.querySelector(id);
+      const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+      window.scrollTo({top: y, behavior: 'smooth'});
+    });
+  });
 }
 
 /* #U5 Sticky

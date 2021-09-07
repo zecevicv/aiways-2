@@ -14,6 +14,10 @@
 
 /* #Global
 ================================================== */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'open-sans', sans-serif;
   font-weight: 400;
@@ -3521,7 +3525,7 @@ h6 {
 
 .u5-page .scroll-spy li {
   position: relative;
-  padding-right: .57vw;
+  padding-right: 1vw;
 }
 
 .u5-page .scroll-spy li a {
@@ -3536,7 +3540,7 @@ h6 {
   transition: all .3s ease;
 }
 
-.u5-page .scroll-spy li a.active span {
+.u5-page .scroll-spy li:hover a span {
   opacity: 1;
   visibility: visible;
 }
