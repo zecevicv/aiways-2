@@ -239,6 +239,10 @@ button {
   color: #989898!important;
 }
 
+.text-black {
+  color: black!important;
+}
+
 .ratio-16-9 {
   position: relative;
   padding-top: 56.25%;
@@ -2563,6 +2567,10 @@ h6 {
   line-height: 1.2;
 }
 
+.u6-page .u5-hero h1 {
+  direction: ltr;
+}
+
 .service-page .u5-hero h1 {
   margin-bottom: 2.35vw;
 }
@@ -2627,6 +2635,7 @@ h6 {
     padding-bottom: 88.13vw;
   }
 
+  .u6-page .u5-hero,
   .about-page .u5-hero,
   .service-page .u5-hero {
     padding-bottom: 42.66vw;
@@ -2643,10 +2652,19 @@ h6 {
   .u5-hero h1 span {
     margin-bottom: 2vw;
   }
+
+  .u6-page .u5-hero h1 {
+    width: 90%;
+    margin: 0 auto 2vw auto;
+  }
   
   .u5-hero .img {
     width: 183.333vw;
     transform: translateX(39%);
+  }
+
+  .u6-page .u5-hero .img {
+    transform: translateX(41%);
   }
   
   .u5-hero .bg {
@@ -2762,6 +2780,10 @@ h6 {
   width: 50%;
 }
 
+.u6-page .u5-performance .about-text {
+  right: 17.5vw;
+}
+
 .u5-performance h2 {
   margin-bottom: .75vw;
 }
@@ -2831,7 +2853,8 @@ h6 {
   object-position: center;
 }
 
-.about-page .u5-performance .video {
+.about-page .u5-performance .video,
+.u6-page .u5-performance .video {
   height: 62.5vw;
   mask-image: url('../img/about/performance-mask.svg');
   -webkit-mask-image: url('../img/about/performance-mask.svg');
@@ -2842,10 +2865,18 @@ h6 {
     padding-top: 10.333vw;
   }
 
+  .u6-page .u5-performance {
+    padding-top: 0;
+  }
+
   .u5-performance .text {
     top: 25.2vw;
     right: 9.73vw;
     width: 79.86%;
+  }
+
+  .u6-page .u5-performance .text {
+    top: 13.3vw;
   }
   
   .u5-performance h2 {
@@ -2899,7 +2930,8 @@ h6 {
     margin-left: 3.23vw;
   }
 
-  .about-page .u5-performance .video {
+  .about-page .u5-performance .video,
+  .u6-page .u5-performance .video {
     height: 238.13vw;
     mask-image: url('../img/about/performance-mask-mobile.svg');
     -webkit-mask-image: url('../img/about/performance-mask-mobile.svg');
@@ -3049,6 +3081,10 @@ h6 {
 @media (max-width: 1023.98px) {
   .u5-design {
     padding: 0 0 22.93vw 0;
+  }
+
+  .u6-page .u5-design {
+    padding: 0 0 18.66vw 0;
   }
   
   .u5-design .text {
@@ -3245,6 +3281,10 @@ h6 {
     padding: 0 0 72vw 0;
     margin: 0 0 16vw 0;
     position: relative;
+  }
+
+  .u6-page .u5-armature {
+    margin: 0 0 20vw 0;
   }
 
   .u5-armature .container {
@@ -4156,6 +4196,10 @@ h6 {
   padding: 1.5vw 0 2.6vw 0;
 }
 
+.u6-page .about-car {
+  padding: 3.65vw 0 0 0;
+}
+
 .about-car .container {
   width: 78%;
 }
@@ -4168,6 +4212,10 @@ h6 {
   .about-car {
     padding: 9.33vw 0;
     overflow: hidden;
+  }
+
+  .u6-page .about-car {
+    padding: 8.4vw 0 9.33vw 0;
   }
 
   .about-car .container {
@@ -4557,5 +4605,25 @@ h6 {
 
   .service-locations .cards p span:not(:last-child) {
     margin-bottom: 1.6vw;
+  }
+}
+
+/* #U6 Text Banner
+================================================== */
+.u6-text-banner {
+  margin-bottom: 2.24vw;
+}
+
+.u6-text-banner .container {
+  width: 43%;
+}
+
+@media (max-width: 1023.98px) {
+  .u6-text-banner {
+    margin-bottom: 16vw;
+  }
+
+  .u6-text-banner .container {
+    width: 81%;
   }
 }
