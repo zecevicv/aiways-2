@@ -335,30 +335,32 @@ if (document.querySelector('.u5-page')) {
 ================================================== */
 const u5Sticky = document.querySelector('.u5-sticky');
 
-window.addEventListener('scroll', () => {
+if  (u5Sticky) {
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      u5Sticky.classList.add('scrolled');
+    } else {
+      u5Sticky.classList.remove('scrolled');
+    }
+  });
+  
   if (window.scrollY > 50) {
     u5Sticky.classList.add('scrolled');
   } else {
     u5Sticky.classList.remove('scrolled');
   }
-});
-
-if (window.scrollY > 50) {
-  u5Sticky.classList.add('scrolled');
-} else {
-  u5Sticky.classList.remove('scrolled');
-}
-
-if (document.querySelector('.u5-sticky .swiper-container')) {
-  new Swiper(".u5-sticky .swiper-container", {
-    direction: "vertical",
-    slidesPerView: 1,
-    allowTouchMove: false,
-    loop: true,
-    autoplay: {
-      delay: 2500,
-    },
-  });
+  
+  if (document.querySelector('.u5-sticky .swiper-container')) {
+    new Swiper(".u5-sticky .swiper-container", {
+      direction: "vertical",
+      slidesPerView: 1,
+      allowTouchMove: false,
+      loop: true,
+      autoplay: {
+        delay: 2500,
+      },
+    });
+  }
 }
 
 /* #U5 Videos

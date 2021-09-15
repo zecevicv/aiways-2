@@ -333,7 +333,7 @@ h6 {
 
 .btn-tertiary {
   border-radius: .6vw;
-  border: 1px solid black;
+  border: 1px solid white;
   color: white;
   background-color: black;
 }
@@ -943,12 +943,12 @@ h6 {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  padding-top: 16vw;
+  padding-top: 13vw;
 }
 
 .video-section-2 .heading {
   color: white;
-  width: 54.1vw;
+  width: 44vw;
   margin-bottom: 5.25vw;
 }
 
@@ -958,6 +958,7 @@ h6 {
 
 .video-section-2 .heading p {
   margin-bottom: .5vw;
+  line-height: 1.6;
 }
 
 .video-section-2 .heading a {
@@ -1126,6 +1127,7 @@ h6 {
   
   .video-section-2 .heading p {
     margin-bottom: 3vw;
+    line-height: 1.4;
   }
 
   .video-section-2 .heading a {
@@ -2767,6 +2769,7 @@ h6 {
 .u5-performance p {
   width: 36.25vw;
   margin-bottom: 2.6vw;
+  line-height: 1.6;
 }
 
 .u5-performance ul {
@@ -2852,6 +2855,7 @@ h6 {
   .u5-performance p {
     width: 100%;
     margin-bottom: 6.66vw;
+    line-height: 1.4;
   }
   
   .u5-performance ul {
@@ -3613,13 +3617,13 @@ h6 {
 
 .u5-page .scroll-spy li {
   position: relative;
-  padding-right: 1vw;
 }
 
 .u5-page .scroll-spy li a {
   height: 2vw;
   display: flex;
   align-items: center;
+  padding-right: 1vw;
 }
 
 .u5-page .scroll-spy li a span {
