@@ -4091,6 +4091,13 @@ h6 {
   
   .about-media-boxes .media-box:last-child {
     margin-bottom: 0!important;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .about-media-boxes .media-box:last-child .text {
+    margin-top: 8.66vw;
+    margin-bottom: 0;
   }
   
   .about-media-boxes .media-box:nth-child(even) .text {
