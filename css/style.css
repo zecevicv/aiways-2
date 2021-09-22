@@ -667,6 +667,13 @@ h6 {
   object-position: bottom center;
 }
 
+.footer .copyright {
+  position: absolute;
+  bottom: 2vw;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 @media (max-width: 1023.98px) {
   .footer {
     padding: 53.3vw 0 24vw 0;
@@ -695,6 +702,10 @@ h6 {
   .footer .bg img,
   .footer .bg picture {
     object-position: top center;
+  }
+
+  .footer .copyright {
+    bottom: 4vw;
   }
 }
 
