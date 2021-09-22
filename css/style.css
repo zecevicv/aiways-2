@@ -2750,6 +2750,12 @@ h6 {
   height: 0;
 }
 
+@media (min-width: 1024px) {
+  .homepage .u5-sticky {
+    bottom: 2vw;
+  }
+}
+
 @media (max-width: 1023.98px) {
   .u5-sticky {
     width: 100%;
