@@ -2642,6 +2642,22 @@ h6 {
   margin-right: .75vw;
 }
 
+.u5-hero .message {
+  position: absolute;
+  bottom: 8vw;
+  right: 4.68vw;
+}
+
+.u5-hero .message a {
+  display: flex;
+  align-items: center;
+}
+
+.u5-hero .message img {
+  width: 1.8vw;
+  margin-left: .75vw;
+}
+
 @media (max-width: 1023.98px) {
   .u5-hero {
     padding-bottom: 88.13vw;
@@ -2704,6 +2720,10 @@ h6 {
     width: 9.33vw;
     margin-right: 1.33vw;
   }
+
+  .u5-hero .message {
+    display: none;
+  }
 }
 
 /* #U5 Sticky
@@ -2765,8 +2785,11 @@ h6 {
     box-shadow: 0 6px 24px rgba(0, 0, 0, 0.16);
     background-color: white;
     text-align: center;
-    padding: 3.46vw 10.53vw;
+    padding: 5.33vw 2vw;
     z-index: 1100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .u5-sticky.scrolled {
@@ -2778,7 +2801,31 @@ h6 {
   }
 
   .u5-sticky .btn {
-    width: 37.333vw;
+    width: 33vw;
+    font-size: 3.73vw;
+    height: 8vw;
+  }
+
+  .u5-sticky .btn.btn-secondary {
+    border: 1px solid #00CFB4;
+  }
+
+  .u5-sticky .btn:first-child {
+    margin-left: 2vw;
+  }
+
+  .u5-sticky .swiper-container {
+    display: none;
+  }
+
+  .u5-sticky .message a {
+    display: flex;
+    align-items: center;
+  }
+
+  .u5-sticky .message a img {
+    width: 7.2vw;
+    margin-left: 1.25vw;
   }
 }
 
