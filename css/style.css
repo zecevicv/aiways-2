@@ -136,6 +136,7 @@ button {
 /* Fonts made from 1920px desktop design */
 
 .f-d-14 {font-size: 0.73vw !important; /* 14px */ }
+.f-d-15 {font-size: 0.78vw !important; /* 15px */ }
 .f-d-16 {font-size: 0.83vw !important; /* 16px */ }
 .f-d-18 {font-size: 0.94vw !important; /* 18px */ }
 .f-d-20 {font-size: 1.04vw !important; /* 20px */ }
@@ -173,6 +174,7 @@ button {
 
 @media (max-width: 1023.98px) {
   .f-m-14 {font-size: 1.86vw !important; /* 14px */ }
+  .f-m-15 {font-size: 2vw !important; /* 15px */ }
   .f-m-16 {font-size: 2.13vw !important; /* 16px */ }
   .f-m-18 {font-size: 2.4vw !important; /* 18px */ }
   .f-m-20 {font-size: 2.66vw !important; /* 20px */ }
@@ -2644,7 +2646,7 @@ h6 {
 
 .u5-hero .message {
   position: absolute;
-  bottom: 8vw;
+  bottom: 6vw;
   right: 4.68vw;
 }
 
@@ -2826,6 +2828,60 @@ h6 {
   .u5-sticky .message a img {
     width: 7.2vw;
     margin-left: 1.25vw;
+  }
+}
+
+/* #U5 Sticky 2
+================================================== */
+.u5-sticky-2 {
+  color: black;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 2.76vw;
+  transition: bottom .5s ease;
+  z-index: 1100;
+  display: flex;
+}
+
+.u5-sticky-2.scrolled {
+  bottom: 1.25vw;
+}
+
+.u5-sticky-2 p:first-child {
+  margin-left: 1.3vw;
+}
+
+.u5-sticky-2 .num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.15vw;
+  height: 1.15vw;
+  color: white;
+  margin-right: .5vw;
+}
+
+@media (max-width: 1023.98px) {
+  .u5-sticky-2 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 52.5vw;
+  }
+  
+  .u5-sticky-2.scrolled {
+    bottom: 52.5vw;
+  }
+  
+  .u5-sticky-2 p:first-child {
+    margin-left: 4.66vw;
+  }
+  
+  .u5-sticky-2 .num {
+    width: 4vw;
+    height: 4vw;
+    margin-right: 1vw;
   }
 }
 
