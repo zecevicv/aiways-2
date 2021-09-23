@@ -287,10 +287,16 @@ document.addEventListener('click', (e) => {
 
 /* #ScrollSpy
 ================================================== */
-if (document.querySelector('.u5-page')) {
+if (document.querySelector('.u5-page') || document.querySelector('.u6-page')) {
 
   // Handling link marking
-  let section = document.querySelectorAll(".u5-page .section");
+  let section = '';
+  if (document.querySelector('.u5-page')) {
+    section = document.querySelectorAll(".u5-page .section");
+  }
+  if (document.querySelector('.u6-page')) {
+    section = document.querySelectorAll(".u6-page .section");
+  }
   
   if (section) {
     let sections = {};
@@ -473,7 +479,7 @@ if (document.querySelector('.popup-design-videos .swiper-container')) {
 ================================================== */
 let scrollPos = 0;
 
-if (document.querySelector('.u5-page')) {
+if (document.querySelector('.u5-page') || document.querySelector('.u6-page')) {
   if (window.innerWidth < 1024) {
     window.addEventListener('scroll', (e) => {
       if (window.scrollY > 0 && (document.body.getBoundingClientRect()).top < scrollPos) {

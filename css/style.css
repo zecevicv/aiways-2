@@ -3779,7 +3779,8 @@ h6 {
 
 /* #U5 Scroll Spy
 ================================================== */
-.u5-page .scroll-spy {
+.u5-page .scroll-spy,
+.u6-page .scroll-spy {
   position: fixed;
   top: 50%;
   right: 2.5vw;
@@ -3788,29 +3789,34 @@ h6 {
   color: #22D3C5;
 }
 
-.u5-page .scroll-spy li {
+.u5-page .scroll-spy li,
+.u6-page .scroll-spy li {
   position: relative;
 }
 
-.u5-page .scroll-spy li a {
+.u5-page .scroll-spy li a,
+.u6-page .scroll-spy li a {
   height: 2vw;
   display: flex;
   align-items: center;
   padding-right: 1vw;
 }
 
-.u5-page .scroll-spy li a span {
+.u5-page .scroll-spy li a span,
+.u6-page .scroll-spy li a span {
   opacity: 0;
   visibility: hidden;
   transition: all .3s ease;
 }
 
-.u5-page .scroll-spy li:hover a span {
+.u5-page .scroll-spy li:hover a span,
+.u6-page .scroll-spy li:hover a span {
   opacity: 1;
   visibility: visible;
 }
 
-.u5-page .scroll-spy li a::after {
+.u5-page .scroll-spy li a::after,
+.u6-page .scroll-spy li a::after {
   content: '';
   position: absolute;
   top: 0;
@@ -3822,17 +3828,19 @@ h6 {
   border-radius: 500px;
 }
 
-.u5-page .scroll-spy li a.active::after {
+.u5-page .scroll-spy li a.active::after,
+.u6-page .scroll-spy li a.active::after {
   background-color: #22D3C5;
 }
 
-.u5-page .scroll-spy li:not(:last-child) {
+.u5-page .scroll-spy li:not(:last-child),
+.u6-page .scroll-spy li:not(:last-child) {
   margin-bottom: .57vw;
 }
 
 @media (max-width: 1023.98px) {
-  .u5-page .scroll-spy {
-    /* top: 20.6vw; */
+  .u5-page .scroll-spy,
+  .u6-page .scroll-spy {
     top: 0;
     right: 0;
     width: 100%;
@@ -3846,18 +3854,21 @@ h6 {
     transform: translateY(-100%);
   }
 
-  .u5-page .scroll-spy ul {
+  .u5-page .scroll-spy ul,
+  .u6-page .scroll-spy ul {
     display: flex;
     justify-content: space-between;
     height: 100%;
   }
 
-  .u5-page .scroll-spy li {
+  .u5-page .scroll-spy li,
+  .u6-page .scroll-spy li {
     display: flex;
     align-items: center;
   }
 
-  .u5-page .scroll-spy li a {
+  .u5-page .scroll-spy li a,
+  .u6-page .scroll-spy li a {
     height: 100%;
     display: flex;
     align-items: center;
@@ -3870,22 +3881,26 @@ h6 {
     transition: all .4s ease;
   }
   
-  .u5-page .scroll-spy li a span {
+  .u5-page .scroll-spy li a span,
+  .u6-page .scroll-spy li a span {
     opacity: 1;
     visibility: visible;
     transition: none;
   }
 
-  .u5-page .scroll-spy li:not(:last-child) {
+  .u5-page .scroll-spy li:not(:last-child),
+  .u6-page .scroll-spy li:not(:last-child) {
     margin-bottom: 0;
   }
 
-  .u5-page .scroll-spy li a.active {
+  .u5-page .scroll-spy li a.active,
+  .u6-page .scroll-spy li a.active {
     background-color: #22D3C5;
     color: white;
   }
 
-  .u5-page .scroll-spy li a::after {
+  .u5-page .scroll-spy li a::after,
+  .u6-page .scroll-spy li a::after {
     display: none;
   }
 }
@@ -4819,19 +4834,24 @@ h6 {
 ================================================== */
 @media (max-width: 1023.98px) {
   .u5-page .header,
-  .u5-page .scroll-spy {
+  .u5-page .scroll-spy,
+  .u6-page .header,
+  .u6-page .scroll-spy {
     transition: all .3s ease;
   }
   
-  .u5-page.hide-top .header {
+  .u5-page.hide-top .header,
+  .u6-page.hide-top .header {
     transform: translateY(-100%);
   }
   
-  .u5-page.show-bottom .scroll-spy {
+  .u5-page.show-bottom .scroll-spy,
+  .u6-page.show-bottom .scroll-spy {
     transform: translateY(0);
   }
   
-  .u5-page.show-bottom:not(.hide-top) .scroll-spy {
+  .u5-page.show-bottom:not(.hide-top) .scroll-spy,
+  .u6-page.show-bottom:not(.hide-top) .scroll-spy {
     transform: translateY(20.5vw);
   }
 }
