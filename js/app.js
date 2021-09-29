@@ -499,3 +499,19 @@ if (document.querySelector('.u5-page') || document.querySelector('.u6-page')) {
     });
   }
 }
+
+/* #Premium Popup Table
+================================================== */
+const premiumPopupTable = document.querySelector('.popup-premium .table');
+
+if (premiumPopupTable) {
+  premiumPopupTable.addEventListener('click', (e) => {
+    if (e.target.closest('.plus')) {
+      premiumPopupTable.classList.add('show-standard');
+    }
+
+    if (e.target.closest('.minus')) {
+      premiumPopupTable.classList.remove('show-standard');
+    }
+  });
+}
