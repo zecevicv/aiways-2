@@ -1,6 +1,7 @@
 /* #Header
     ======================================================= */
 const header = document.querySelector('.header');
+const headerMenu = document.querySelector('.header-menu');
 
 window.addEventListener('scroll', () => {
   if (window.scrollY > 0 && !header.classList.contains('inverted')) {
@@ -14,6 +15,25 @@ if (window.scrollY > 0) {
   header.classList.add('header-white');
 } else {
   header.classList.remove('header-white');
+}
+
+// Disable seeing while page load
+if (headerMenu) {
+  headerMenu.style.display = 'none';
+
+  setTimeout(function(){ 
+    headerMenu.style.display = '';
+  }, 600);
+}
+
+// Menu
+const hamburger = document.querySelector('.header-hamburger a');
+
+if (hamburger) {
+  hamburger.addEventListener('click', (e) => {
+    e.preventDefault();
+    header.classList.toggle('show');
+  });
 }
 
 /* #Video Section 1
