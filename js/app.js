@@ -404,21 +404,21 @@ if  (u5Sticky) {
 
 /* #U5 Sticky 2
 ================================================== */
-const u5Sticky2 = document.querySelector('.u5-sticky-2');
+const heroMessage = document.querySelector('.u5-hero .message');
 
-if  (u5Sticky2) {
+if  (heroMessage) {
   window.addEventListener('scroll', () => {
     if (window.scrollY > 50) {
-      u5Sticky2.classList.add('scrolled');
+      heroMessage.classList.add('scrolled');
     } else {
-      u5Sticky2.classList.remove('scrolled');
+      heroMessage.classList.remove('scrolled');
     }
   });
   
   if (window.scrollY > 50) {
-    u5Sticky2.classList.add('scrolled');
+    heroMessage.classList.add('scrolled');
   } else {
-    u5Sticky2.classList.remove('scrolled');
+    heroMessage.classList.remove('scrolled');
   }
 }
 
